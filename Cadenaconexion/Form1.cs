@@ -22,7 +22,7 @@ namespace Cadenaconexion
         private void Form1_Load(object sender, EventArgs e)
         {
             Conexion.Conectar();
-            MessageBox.Show("bebé, LO LOGRAMOS :´)");
+            MessageBox.Show("Pulse para iniciar");
 
             dataGridView1.DataSource = Llenar_grid();
         }
@@ -58,7 +58,7 @@ namespace Cadenaconexion
 
             cmd1.ExecuteNonQuery();
 
-            MessageBox.Show("¡Los datos fueron añadidos sin problemones!"); //Mensaje para comprobar si se añadieron datos (están por orden de letra)
+            MessageBox.Show("Los datos han sido añadidos"); //Mensaje para comprobar si se añadieron datos (están por orden de letra)
 
             dataGridView1.DataSource = Llenar_grid();
         }
@@ -99,7 +99,7 @@ namespace Cadenaconexion
             cmd2.Parameters.AddWithValue("@Country", textBox9.Text);
 
             cmd2.ExecuteNonQuery();
-            MessageBox.Show("¡Los datos han sido actualizados, enhorabuena :)!"); //Mensaje que verifique si se actualizó
+            MessageBox.Show("Los datos se han actualizado correctamente"); //Mensaje que verifique si se actualizó
             dataGridView1.DataSource = Llenar_grid();
         }
 
@@ -113,7 +113,7 @@ namespace Cadenaconexion
 
             cmd3.ExecuteNonQuery();
 
-            MessageBox.Show("Los datos se han eliminado :O"); //Mensaje que verifique si se completó la eliminación
+            MessageBox.Show("Los datos se han eliminado "); //Mensaje que verifique si se completó la eliminación
 
             dataGridView1.DataSource=Llenar_grid();
         }

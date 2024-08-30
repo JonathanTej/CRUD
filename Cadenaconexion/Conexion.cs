@@ -12,7 +12,7 @@ namespace Cadenaconexion
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=DESKTOP-7IK1942\\SQLEXPRESS;DATABASE=Northwind;integrated security=true;");
+            SqlConnection cn = new SqlConnection("Data Source=LAPTOP-T37BFAOL\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;");
             cn .Open();
             return cn;
         }
